@@ -17,7 +17,7 @@ const View = () => {
         e.preventDefault()
         setError(null)
 
-        const response = await fetch(`/api/professional/${professionals[id]._id}`, {
+        const response = await fetch(`https://profolio-api.onrender.com/api/professional/${professionals[id]._id}`, {
             method: 'DELETE',
             headers: {
                 "Authorization": `Bearer ${user.token}`
