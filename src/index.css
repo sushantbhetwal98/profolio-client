@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #4364f9;
+  --error: #e7195a;
+  --success: #04d427;
+}
+
+body {
+  background: #f1f1f1;
+  margin: 0;
+  font-family: "Poppins";
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.container {
+  max-width: 1140px;
+  width: 90%;
+  margin: auto;
+}
+
+.primary-button {
+  color: white;
+  background: var(--primary);
+  padding: 10px 15px;
+  border: none;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.success-button {
+  color: white;
+  background: var(--success);
+  padding: 10px;
+  border: none;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.logout-button {
+  color: var(--success);
+  background: transparent;
+  padding: 10px;
+  border: 1px solid var(--success);
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.danger-button {
+  color: white;
+  background: var(--error);
+  padding: 10px;
+  border: none;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  filter: brightness(0.9);
+}
+
+div.error {
+  padding: 10px;
+  background: #ffefef;
+  border: 1px solid var(--error);
+  border-radius: 4px;
+  margin: 20px 0;
+}
